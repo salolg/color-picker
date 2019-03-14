@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="author" content="Olga Sałagacka">
+    <title>Color Picker.</title>
+    <link rel="Stylesheet" href="colorpicker.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+
+    
+</head>
+<body >
+
+    <ul class = "dsk">
+      <li class = "main"><a href="main.html" ss class="co">Opis</a></li>
+    </ul>
+    <article>
+       <h1 id="error">Podaj link do zdjecia:</h1> 
+    <form name="form1">
+    <input type="text" id ="id1" list="defaultURLs" name="pole1">  
+     <input id="starter" type="button" value="Submit"  onclick="validate()">
+     
+    </form>
+
+    
+<br>
+
+<datalist id="defaultURLs">
+  <option value="https://i.imgur.com/mBpgfPo.jpg">
+  <option value="https://farm3.staticflickr.com/2429/3674015851_5fdeb23d7c_b.jpg">
+  <option value="https://c2.staticflickr.com/4/3018/2290360512_583aa0e33a_z.jpg?zz=1">
+  <option value="https://c1.staticflickr.com/4/3911/14515811436_1056502de3_b.jpg">
+  <option value="https://c1.staticflickr.com/6/5489/9563945762_cd5c18585f_b.jpg">
+    <option value="https://c1.staticflickr.com/4/3805/13253493485_6d7a62e97d_b.jpg">
+
+</datalist>
+
+        <div id="color">rgba(0, 0, 0, 0)</div> <br>
+         <canvas id="canvas" ></canvas>
+        <script src="colorpicker.js"></script>
+    
+    </article>
+        
+
+
+<footer>
+    © 2018 Olga Sałagacka<span id="demo" style="float: right;"></span>
+<script> document.getElementById('demo').innerHTML = Date(); 
+</script>
+</footer>   
+</body>
+</html>
